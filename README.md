@@ -1,5 +1,7 @@
 # Meetup - Live Coding - Full Stack Chat Application with Dart, Angular & Flutter
 
+[Luxembourg Dart Lang Meetup](https://www.meetup.com/Luxembourg-Dart-Lang-Meetup/events/243168622/)
+
 ![Screenshot](screenshot.png)
 
 ## Background
