@@ -6,7 +6,6 @@ dependencies:
     sdk: flutter
   dart_chat_common:
     path: ../dart_chat_common
-  web_socket_channel: ^1.0.5
 
 dev_dependencies:
   flutter_test:

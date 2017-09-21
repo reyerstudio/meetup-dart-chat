@@ -22,7 +22,7 @@ var config = new ClientConfig()
 void main() {
   runApp(new DartChatApp(new ChatService(
     new IOClient(),
-    (url) => new IOWebSocketChannel.connect(url),
+        (url) => new IOWebSocketChannel.connect(url),
     config,
   )));
 }
