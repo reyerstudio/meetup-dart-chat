@@ -20,4 +20,4 @@ Charlie and Dan regulalry use Android and iOS bases smartphones.
 * [Websocket](doc/dart_chat-202.md) (202)
 * [CLI Client](doc/dart_chat-300.md) (300)
 * [Angular Client](doc/dart_chat-301.md) (301)
-* [Android/iOS Clients with FLutter](doc/dart_chat-302.md) (302)
+* [Android/iOS Clients with Flutter](doc/dart_chat-302.md) (302)

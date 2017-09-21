@@ -1,4 +1,4 @@
-# Mobile Client
+# Android/iOS Clients with Flutter
 
 ## Packages used
 - **flutter**
