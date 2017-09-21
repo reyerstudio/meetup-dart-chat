@@ -1,5 +1,3 @@
-library dart_chat_common.client;
-
 export 'src/client/chat_api.dart';
 export 'src/client/chat_service.dart';
 export 'src/client/config.dart';

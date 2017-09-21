@@ -26,6 +26,7 @@ class AuthTokenData extends Object with _$AuthTokenDataSerializerMixin {
   @JsonKey(name: 'e')
   DateTime expirationDate;
 
+  // TODO valid / valid2
   bool get valid => true;
   bool get valid2 {
     var now = new DateTime.now().toUtc();

@@ -39,5 +39,5 @@ ClientConfig loadConfig(List<String> args) {
     ..username = results['username']
     ..password = results['password']
     ..log =
-        Logger.root.level = Level.LEVELS.firstWhere((level) => level.name == results['log'], orElse: () => Level.ALL);
+    Logger.root.level = Level.LEVELS.firstWhere((level) => level.name == results['log'], orElse: () => Level.ALL);
 }
