@@ -1,0 +1,20 @@
+name: dart_chat_vm
+description: Chat for Dart - VM part.
+version: 0.1.0
+author: Stéphane Este-Gracias <sestegra@gmail.com>
+publish_to: none
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+
+dependencies:
+  args: ^0.13.7
+  logging: ^0.11.3+1
+  dart_chat_common:
+    path: ../dart_chat_common
+  mongo_dart: ^0.3.0
+  random_string: ^0.0.1
+  shelf_rest: ^0.3.5
+
+dev_dependencies:
+  test: ^0.12.0

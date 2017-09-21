@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="chat-window" [ngClass]="{ 'login-window' : user == null }" >
+        <div class="chat-window-header">Dart Chat - {{ user == null ? "Login" : username}}</div>
+        <div class="login-fields" *ngIf="user == null">
+            <material-input floatingLabel label="Username" [(ngModel)]="username"></material-input>
+            <material-input floatingLabel label="Password" [(ngModel)]="password"></material-input>
+            <material-button class="login-button" (click)="login()">Submit</material-button>
+        </div>
+        <div class="message-fields" *ngIf="user != null">
+            <div class="message-container" vuScrollDown>
+                <div *ngFor="let message of messages" class="message-box">
+                    <div class="message" [ngClass]="{'own-message' : message.userId == user.id}">
+                        <material-icon size="medium" icon="person"></material-icon>
+                        <div class="message-content">
+                            <div class="user-name">{{getChatUser(message.userId)?.username}}</div>
+                            <div class="user-message">{{message.text}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-input-line">
+                <material-input label="Send a message"
+                                vuHoldFocus
+                                #textInput
+                                (keyup.enter)="sendTextMessage()"
+                >
+                </material-input>
+                <material-button (click)="sendTextMessage()"><material-icon size="medium" icon="send"></material-icon></material-button>
+            </div>
+        </div>
+    </div>
+</div>
