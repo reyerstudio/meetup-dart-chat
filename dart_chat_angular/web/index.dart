@@ -20,7 +20,7 @@ main() {
       ChatService,
       useValue: new ChatService(
         new BrowserClient(),
-        (url) => new HtmlWebSocketChannel.connect(url),
+            (url) => new HtmlWebSocketChannel.connect(url),
         config,
       ),
     ),
