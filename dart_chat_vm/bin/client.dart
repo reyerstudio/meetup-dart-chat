@@ -23,18 +23,15 @@ Future<Null> main(List<String> args) async {
 }
 
 void readCredentials(ClientConfig config) {
-  var username = config.username;
-  var password = config.password;
-
-  if (username == null) {
+  if (config.username == null) {
     stdout.write("Username: ");
-    username = stdin.readLineSync();
+    config.username = stdin.readLineSync();
   }
 
-  if (password == null) {
+  if (config.password == null) {
     stdout.write("Password: ");
     stdin.echoMode = false;
-    password = stdin.readLineSync();
+    config.password = stdin.readLineSync();
     stdin.echoMode = true;
     stdout.writeln();
   }
@@ -44,7 +41,7 @@ Future startApp(ClientConfig config) async {
   bool messageSending = false;
   var service = new ChatService(
     new IOClient(),
-    (url) => new IOWebSocketChannel.connect(url),
+        (url) => new IOWebSocketChannel.connect(url),
     config,
   );
   service.onMessage = (message) {
@@ -68,7 +65,7 @@ Future startApp(ClientConfig config) async {
 
   // Listen lines from stdin
   stdin.transform(new Utf8Decoder()).transform(new LineSplitter()).listen(
-    (String text) {
+        (String text) {
       if (text.trim().isNotEmpty) {
         messageSending = true;
         service.sendMessage(text);

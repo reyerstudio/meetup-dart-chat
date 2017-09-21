@@ -51,7 +51,7 @@ Future<Null> main(List<String> args) async {
     var json = user.toJson();
     _log.info(json);
     return json;
-  }));
+  }).toList());
 
   // Close database
   await db.close();

@@ -8,4 +8,3 @@ String hashPassword(String password, String salt, String secret) =>
     sha256.convert(('$salt:$password:$secret').codeUnits).toString();
 
 String generateSalt() => randomAlphaNumeric(24);
-

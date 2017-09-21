@@ -33,6 +33,6 @@ ServerConfig loadConfig(List<String> args) {
     ..port = int.parse(results['port'])
     ..secret = results['secret']
     ..log = Logger.root.level = Level.LEVELS.firstWhere(
-        (level) => level.name == results['log'],
+            (level) => level.name == results['log'],
         orElse: () => Level.ALL);
 }

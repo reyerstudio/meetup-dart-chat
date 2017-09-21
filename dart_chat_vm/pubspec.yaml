@@ -9,11 +9,14 @@ environment:
 
 dependencies:
   ansicolor: ^0.0.9
+  args: ^0.13.7
+  logging: ^0.11.3+1
   dart_chat_common:
     path: ../dart_chat_common
   mongo_dart: ^0.3.0
   random_string: ^0.0.1
   shelf_rest: ^0.3.5
+  shelf_web_socket: ^0.2.1
 
 dev_dependencies:
   test: ^0.12.0
