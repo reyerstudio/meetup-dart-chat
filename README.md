@@ -15,7 +15,7 @@ Charlie and Dan regulalry use Android and iOS bases smartphones.
 ## Steps
 
 * [Pre-requisites](doc/dart_chat-100.md) ([Code](steps/dart_chat-100))
-* [Shared Data Model & Common configuration] ([Code](steps/dart_chat-200))
+* [Shared Data Model & Common configuration](doc/dart_chat-200.md) ([Code](steps/dart_chat-200))
 * [Server](doc/dart_chat-201.md) ([Code](steps/dart_chat-201))
 * [Websocket](doc/dart_chat-202.md) ([Code](steps/dart_chat-202))
 * [CLI Client](doc/dart_chat-300.md) ([Code](steps/dart_chat-300))
